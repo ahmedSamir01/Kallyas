@@ -80,18 +80,20 @@ $(function () {
     });
     
     
-    $("nav ul li").on("click", function () {
+    $("nav ul li a").on("click", function () {
 
         $(".navbar-collapse").removeClass("show");
         $("body, html").animate({
            
-            scrollTop: $("." + $(this).children().data('scroll')).offset().top
+            scrollTop: $("." + $(this).data('scroll')).offset().top
             
         }, 1000);
 
         
     });
 
+    $(".navbar-collapse").on("click", (e) => {e.stopPropagation()});
+    
     // close when click somewhere
     $(document).bind("click", function(e) {
         if ($(".navbar-collapse").hasClass("show") && e.target !== document.querySelector(".show") && e.target !== document.querySelector(".navbar-toggler")) {$(".navbar-toggler").click()}
