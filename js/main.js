@@ -47,12 +47,12 @@ $(function () {
     });
     
     
-    $("nav ul li").on("click", function () {
+    $("nav ul li a").on("click", function () {
 
         $(".navbar-collapse").removeClass("show");
         $("body, html").animate({
            
-            scrollTop: $("." + $(this).children().data('scroll')).offset().top
+            scrollTop: $("." + $(this).data('scroll')).offset().top
             
         }, 1000);
 
