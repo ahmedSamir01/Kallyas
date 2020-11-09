@@ -92,7 +92,6 @@ $(function () {
         
     });
 
-    $(".navbar-collapse").on("click", (e) => {e.stopPropagation()});
     
     // close when click somewhere
     $(document).bind("click", function(e) {
