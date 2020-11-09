@@ -18,40 +18,7 @@ $(function () {
         
     });
     
-    let portfolio = document.querySelectorAll(".portfolio img");
     
-    portfolio.forEach(pic => {
-        
-         pic.onclick = function () {
-             
-             let over = document.createElement('div');
-             over.className = 'popup-over';
-             document.body.appendChild(over);
-             
-             // create popup
-             let popBox = document.createElement('div');
-             popBox.className = 'popup';
-             
-             let close = document.createElement("span");
-             let x = document.createTextNode("x");
-             
-             close.appendChild(x);
-             close.className = 'close';
-             popBox.appendChild(close);
-             
-
-             // create img
-             let popImg = document.createElement('img');
-             popImg.className = "popup-img";
-             popImg.src = pic.src;
-             
-             popBox.appendChild(popImg);
-             document.body.appendChild(popBox);
-    
-             
-         }
-        
-    });
     
     document.addEventListener("click", function(e) {
          
