@@ -1,6 +1,6 @@
 # Kallyas
 
-Website for An Independent Design And Development Agency (EliteCrop)
+Website for Helping Business And Companies Innovate Transform And Lead.
 
 ## Used technologies:
 
